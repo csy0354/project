@@ -40,7 +40,7 @@ app.use(methodOverride('_method', {methods: ['POST', 'GET']}));
 app.use(session({
   resave: true,
   saveUninitialized: true,
-  secret: 'long-long-long-secret-string-1313513tefgwdsvbjkvasd'
+  secret: 'secret long password for session 2015-11'
 }));
 app.use(flash());
 app.use(express.static(path.join(__dirname, 'public')));
