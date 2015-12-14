@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+  .container
+    h1.page-header 설문지 디자인
+    form(action='/surveys', method='POST')
+      .form-group
+        label(for='question') 질문 입력
+        input.form-control(type='text', id='question', name='question', placeholder='question')
+      .form-group
+        label(for='answer') 질문 답변
+        input.form-control(type='text', id='answer', name='answer', placeholder='answer')
+      .form-actions
+        a.btn.btn-default(href='javascript:window.history.back();') 뒤로 
+        | &nbsp;
+        button.btn.btn-primary(type='submit') 설문 완료
